@@ -1,0 +1,73 @@
+body {
+    background-image: url('Fondo_pixel.png');
+    background-size: cover;
+    /* Para que la imagen cubra todo el fondo */
+    background-position: center;
+    /* Para que la imagen se centre */
+    background-repeat: no-repeat;
+    /* Para que la imagen no se repita */
+    background-attachment: fixed;
+    /* Para que la imagen no se mueva al hacer scroll */
+
+    /* El resto de tu código para el body va aquí */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+#contador-dias {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.galeria {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.foto-container {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 20px;
+}
+
+#foto {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+#texto-foto {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.flecha {
+    background-color: transparent;
+    border: none;
+    font-size: 3em;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.flecha:hover {
+    color: #000;
+}
